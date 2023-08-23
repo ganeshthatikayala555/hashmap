@@ -1,0 +1,14 @@
+import java.util.*;
+public class HelloWorld{
+     public static void main(String []args){
+        Map<String,Object> mymap=new HashMap<>();
+        mymap.put("name","ganesh");
+        mymap.put("age",17);
+        String name=(String) mymap.get("name");
+        int age=(int) mymap.get("age");
+        System.out.println(name);
+        if(mymap.containsKey("age")){
+            System.out.println(age);
+        }
+     }
+}
