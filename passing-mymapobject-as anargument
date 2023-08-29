@@ -1,0 +1,21 @@
+import java.util.*;
+public class Hello{
+     public static void main(String []args){
+         Map<Integer,Integer> mymap=new HashMap<>();
+         mymap.put(2,4);
+         mymap.put(6,7);
+         mymap.put(9,3);
+         mymap.put(5,8);
+         mymap.put(7,9);
+        System.out.println(mymap.get(2));
+        if(mymap.containsKey(5)){
+            System.out.println(mymap.get(5));
+        }
+        call(mymap);
+     }
+     public static void call(Map<Integer,Integer>mymap){
+         if(mymap.containsKey(9)){
+             System.out.println(mymap.get(9));
+         }
+     }
+}
